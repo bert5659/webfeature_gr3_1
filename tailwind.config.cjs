@@ -6,7 +6,7 @@ module.exports = {
       colors: {
         darkblue: "#0D434F",
         purple: "#4E6496",
-        dauda: "#F0768B",
+        lyserod: "#F0768B",
         red: "#FF9999",
       },
     },
