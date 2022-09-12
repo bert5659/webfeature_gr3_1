@@ -9,7 +9,13 @@ module.exports = {
         lyserod: "#F0768B",
         red: "#FF9999",
       },
+      cursor: {
+          min: "url(img/kamera2.png) 25 25, pointer",
+        },
     },
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
 };
+
+
+ 
