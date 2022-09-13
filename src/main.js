@@ -55,3 +55,11 @@ document.querySelector("#analog").addEventListener("animationend", visAnalog);
 function visAnalog() {
   document.querySelector("#analog").classList.add("opacityfull");
 }
+
+const items = document.querySelectorAll("#horisontalliste li");
+scroll(
+  animate("#horisontalliste", {
+    transform: ["none", `translateX(-${items.length - 1}00vw)`],
+  }),
+  { target: document.querySelector("#horisontalscrollsection") }
+);
