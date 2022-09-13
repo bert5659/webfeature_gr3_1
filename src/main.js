@@ -11,3 +11,8 @@ animate(
     delay: stagger(1, { start: 2 }),
   }
 );
+
+
+function billede(){
+  document.querySelector.classList.add()
+}
