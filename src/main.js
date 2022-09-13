@@ -12,7 +12,22 @@ animate(
   }
 );
 
+document.querySelector("#glitch").addEventListener("click", billede);
 
-function billede(){
-  document.querySelector.classList.add()
+function billede() {
+  document.querySelector("#glitch").classList.add("opacity");
+}
+
+document.querySelector("#glitch2").addEventListener("click", billede2);
+
+function billede2() {
+  document.querySelector("#glitch2").classList.add("opacity");
+}
+
+document.querySelector("#glitch2").addEventListener("animationend", visBillede);
+document.querySelector("#glitch").addEventListener("animationend", visBillede);
+
+function visBillede() {
+  document.querySelector("#glitch").classList.add("opacityfull");
+  document.querySelector("#glitch2").classList.add("opacityfull");
 }

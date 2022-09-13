@@ -14,3 +14,20 @@
     font-family: "Lora", serif;
   }
 }
+
+.opacity {
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.opacityfull {
+  opacity: 100%;
+}
