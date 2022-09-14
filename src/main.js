@@ -4,13 +4,17 @@ import { animate, stagger, inView, scroll, timeline } from "motion";
 
 scroll(animate(".progress-bar", { scaleX: [0, 1] }));
 
-animate(
-  ".staggeranimation li",
-  { opacity: [0, 1] },
-  {
-    delay: stagger(1, { start: 2 }),
-  }
-);
+// Stagger i sektion-2
+inView( ".staggeranimation li" , () =>{
+  
+  animate(
+    ".staggeranimation li",
+    { opacity: [0, 1] },
+    {
+      delay: stagger(1, { start: 0.5 }),
+    }
+  );
+})
 
 // document.querySelector("#glitch").addEventListener("click", billede);
 
