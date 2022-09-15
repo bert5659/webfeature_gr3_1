@@ -5,8 +5,7 @@ import { animate, stagger, inView, scroll, timeline } from "motion";
 scroll(animate(".progress-bar", { scaleX: [0, 1] }));
 
 // Stagger i sektion-2
-inView( ".staggeranimation li" , () =>{
-  
+inView(".staggeranimation li", () => {
   animate(
     ".staggeranimation li",
     { opacity: [0, 1] },
@@ -14,7 +13,7 @@ inView( ".staggeranimation li" , () =>{
       delay: stagger(1, { start: 0.5 }),
     }
   );
-})
+});
 
 // document.querySelector("#glitch").addEventListener("click", billede);
 
@@ -75,17 +74,3 @@ document.querySelectorAll(".parallaxcontainer").forEach((parallaxcontainer) => {
     target: elementderskalparallaxes,
   });
 });
-
-const lillevideo = document.querySelector("#videofil");
-lillevideo.pause();
-
-scroll(
-  ({ y }) => {
-    if (!lillevideo.readyState) return;
-    lillevideo.currentTime = lillevideo.duration * y.progress;
-  },
-  {
-    target: document.querySelector(".videoarticle"),
-    offset: ["-100vh", "end end"],
-  }
-);

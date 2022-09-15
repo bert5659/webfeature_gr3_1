@@ -41,11 +41,11 @@
 
     <!-- section 1 -->
     <section class="">
-      <div class="mx-6 bg-purple p-8 text-white lg:mx-48 lg:mt-20 lg:p-20">
+      <div class="mx-6 bg-purple p-8 text-white lg:mx-80 lg:mt-20 lg:p-20">
         <p class="text-sm lg:text-base">
-          Pierre Falcke. Du ved formentligt ikke hvem han er. Men indtil for
-          kort tid siden, så du hans værker et par gange om dagen, hver dag,
-          året rundt.
+          Pierre Falcke. <br />
+          Du ved formentligt ikke hvem han er. Men indtil for kort tid siden, så
+          du hans værker et par gange om dagen, hver dag, året rundt.
         </p>
         <p class="pt-4 text-sm lg:pt-6 lg:text-base">
           Pierre Falcke var en af verdens bedst sælgende stock-fotografer, og
@@ -84,6 +84,7 @@
         <div class="-z-10">
           <img class="" src="img/filmfoto.webp" alt="fotoaffilm" />
         </div>
+
         <div
           class="absolute top-40 m-8 bg-purple p-6 text-white lg:mx-80 lg:mt-20 lg:p-20"
         >
@@ -244,20 +245,6 @@
       </section>
     </main>
 
-    <section class="sticky">
-      <div class="videocontainer sticky top-0 w-full">
-        <video
-          src="img/video.mp4"
-          muted
-          loop
-          playsinline
-          class="w-full"
-          id="videofil"
-        ></video>
-      </div>
-      <div class="videoarticle h-screen"></div>
-    </section>
-
     <!-- section 7  -->
     <section class="mx-8 grid lg:mx-80">
       <!-- overskriften glitchart  -->
@@ -299,7 +286,7 @@
       <!-- Film stribe analog  -->
       <img src="img/analogfilmstribe.webp" alt="filmstribe" />
 
-      <div class="mx-8 grid lg:mx-80">
+      <div class="mx-8 mt-10 grid lg:mx-80">
         <!-- selve polaroid  -->
         <div class="bg-white p-4 shadow-md lg:mx-36">
           <img
@@ -351,15 +338,26 @@
 
     <!-- section 10 -->
     <section>
-      <div class="flex">
-        <div>
+      <div class="">
+        <div class="">
+          <video
+            src="img/video.mp4"
+            autoplay
+            loop
+            muted
+            class="my-10 opacity-50 lg:absolute lg:z-10 lg:my-0 lg:min-h-full lg:w-full lg:min-w-full lg:max-w-none"
+            id="videofil"
+          ></video>
+        </div>
+
+        <div class="lg:pt-20">
           <h2
-            class="ml-8 mb-8 text-2xl text-white lg:mx-80 lg:mt-20 lg:text-4xl"
+            class="relative z-30 ml-8 mb-8 text-2xl text-white lg:mx-80 lg:mt-20 lg:text-4xl"
           >
             En ny begyndelse
           </h2>
           <p
-            class="ml-8 text-sm text-white lg:mx-80 lg:mb-20 lg:mt-6 lg:text-base"
+            class="relative z-30 ml-8 text-sm text-white lg:mx-80 lg:mb-20 lg:mt-6 lg:text-base"
           >
             Men Pierre er glad for sin beslutning. Indkomsten er lavere nu, men
             han har stadig lidt penge på kontoen, og studerer nu
@@ -371,7 +369,7 @@
             visuelle udtryk. Det uperfekte er perfekt.”
           </p>
           <p
-            class="ml-8 mt-8 text-sm text-white lg:mx-80 lg:mb-40 lg:text-base"
+            class="relative z-30 ml-8 mt-8 text-sm text-white lg:mx-80 lg:mb-40 lg:text-base"
           >
             Karrieren begynder også så småt også at gå den rette vej: Pierre er
             begyndt at sælge fotokunst på nettet, og har udgivet sin første
@@ -381,13 +379,10 @@
             Biblioteks fotoudstilling.
           </p>
         </div>
-        <div>
-          <img src="img/bog.webp" alt="bog" class="lg:mx-auto" />
-        </div>
       </div>
     </section>
     <div
-      class="progress-bar fixed left-0 top-0 right-0 h-4 w-full origin-top-left bg-gradient-to-tr from-darkblue to-lyserod"
+      class="progress-bar fixed left-0 top-0 right-0 h-4 w-full origin-top-left bg-gradient-to-r from-darkblue to-lyserod"
     ></div>
 
     <footer class="bg-slate-50 lg:grid lg:grid-cols-3 lg:py-10">
