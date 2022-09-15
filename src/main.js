@@ -4,34 +4,18 @@ import { animate, stagger, inView, scroll, timeline } from "motion";
 
 scroll(animate(".progress-bar", { scaleX: [0, 1] }));
 
-// Stagger i sektion-2
-inView(".staggeranimation li", () => {
+inView(".staggeranimation", ({target}) => {
   animate(
-    ".staggeranimation li",
+    target.querySelectorAll("li"),
     { opacity: [0, 1] },
     {
+      duration:0.7,
       delay: stagger(1, { start: 0.5 }),
+    });
+    return () => {
+      animate (target, {opacity: [0,1]}, {duration: 2});
     }
-  );
 });
-
-// document.querySelector("#glitch").addEventListener("click", billede);
-
-// function billede() {
-//   document.querySelector("#glitch").classList.add("opacity");
-// }
-
-// document.querySelector("#glitch2").addEventListener("click", billede2);
-
-// function billede2() {
-//   document.querySelector("#glitch2").classList.add("opacity");
-// }
-
-// document.querySelector("#glitch2").addEventListener("animationend", visBillede);
-
-// function visBillede() {
-//   document.querySelector("#glitch").classList.add("opacityfull");
-// }
 
 // billede 1 glitchart
 document.querySelector("#glitch").addEventListener("click", billede);
